@@ -19,9 +19,9 @@
     <!-- Navigation Bar -->
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="about.html">Sobre Mi</a>
-            <a href="#">Especialidades</a>
+            <a href="specialties.html">Especialidades</a>
             <a href="#">Contactos</a>
         </nav>
     </div>
@@ -35,7 +35,13 @@
                 <p>
                     lol
                 </p>
+            </section>
 
+            <section class="slice">
+                <h3>Especialidades</h3>
+                <p>
+                    Me especializo en distintos tipos de lenguajes, front-end, back-end, object-oriented, data-managment & functional-programing.
+                </p>
                 <!-- Cool button -->
                 <script type="text/javascript">
                     window.addEventListener("load", onLoadHandler);
@@ -44,22 +50,16 @@
                         button.addEventListener("click",buttonClick);
                     }
                     function buttonClick(e){
-                        let input = document.getElementById("cool-text");
-                        input.value = "Hello world!";
+                        let input = document.getElementById("cool-input");
+                        let text = document.getElementById("cool-text");
+                        text.innerText = input.value;
                     }
                 </script>
                 <div>
-                    <input type="text" id="cool-text">
                     <button id="cool-button">Click Me!</button>
+                    <input type="text" id="cool-input">
+                    <p id="cool-text"></p>
                 </div>
-
-            </section>
-
-            <section class="slice">
-                <h3>Especialidades</h3>
-                <p>
-                    b
-                </p>
             </section>
 
             <section class="slice">

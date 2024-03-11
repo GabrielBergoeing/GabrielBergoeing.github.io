@@ -30,6 +30,9 @@ h3 {
 h1,h2,h3{
     text-align: center;
 }
+p{
+
+}
 .contenedor {
     max-width: 120rem;
     margin: 0 auto; /* top right bottom left */
@@ -78,6 +81,13 @@ h1,h2,h3{
 
 /*__________Secciones__________*/
 @media (min-width: 768px) {
+    section{
+        padding: 2rem;
+    }
+    p{
+        text-align: justify;
+        text-justify: inter-word;
+    }   
     .bio {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 3 Numbers, 3 coulmns*/
@@ -88,8 +98,4 @@ h1,h2,h3{
         grid-template-columns: repeat(3, 1fr); /* 3 Numbers, 3 coulmns*/
         /*grid: row, row / column, column;*/
     }
-    .slice, .bio{
-        text-align: justify;
-        text-justify: inter-word;
-    }   
 }
