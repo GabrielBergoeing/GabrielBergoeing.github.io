@@ -1,0 +1,91 @@
+:root { /* Useful for storing global variables */
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro), var(--blanco));
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto; /* top right bottom left */
+}
+.sombra{
+    box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/*__________Title Heading__________*/
+.titulo span {
+    font-size: 2rem;
+}
+
+
+/*__________Navigation Bar__________*/
+.nav-bg {
+    background-color: var(--secundario);
+}
+.navegacion-principal {
+   display: flex;
+   flex-direction: column; /*Standard for mobile devices*/
+}
+@media (min-width: 768px) { /*Tablet screen*/
+    .navegacion-principal {
+        justify-content: space-around; /*Distance between link index*/
+        flex-direction: row;
+    }
+}
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    padding: 1rem; /*Expands area of the element by N rem*/
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navegacion-principal a:hover { /**Hover area from main nav menu**/
+    color: var(--oscuro);
+    background-color: var(--primario);
+}
+
+
+/*__________Secciones__________*/
+@media (min-width: 768px) {
+    .bio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 3 Numbers, 3 coulmns*/
+        /*grid: row, row / column, column;*/
+    }
+    .secciones {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 Numbers, 3 coulmns*/
+        /*grid: row, row / column, column;*/
+    }   
+}
