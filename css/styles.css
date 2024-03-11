@@ -87,5 +87,9 @@ h1,h2,h3{
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 Numbers, 3 coulmns*/
         /*grid: row, row / column, column;*/
+    }
+    .slice, .bio{
+        text-align: justify;
+        text-justify: inter-word;
     }   
 }

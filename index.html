@@ -28,23 +28,44 @@
     
     <!-- Introductory Block -->
     <main class="contenedor sombra">
-        <h2>Sobre Mí</h2>
+        <h2>Características</h2>
         <div class="secciones">
             <section class="slice">
+                <h3>Sobre Mí</h3>
                 <p>
-                    a
+                    lol
                 </p>
+
+                <!-- Cool button -->
+                <script type="text/javascript">
+                    window.addEventListener("load", onLoadHandler);
+                    function onLoadHandler(){
+                        let button = document.getElementById("cool-button");
+                        button.addEventListener("click",buttonClick);
+                    }
+                    function buttonClick(e){
+                        let input = document.getElementById("cool-text");
+                        input.value = "Hello world!";
+                    }
+                </script>
+                <div>
+                    <input type="text" id="cool-text">
+                    <button id="cool-button">Click Me!</button>
+                </div>
+
             </section>
 
             <section class="slice">
+                <h3>Especialidades</h3>
                 <p>
                     b
                 </p>
             </section>
 
             <section class="slice">
+                <h3>Contactos</h3>
                 <p>
-                    c
+                    Me puedes contactar mediante diferentes medios, tales como, amet consectetur adipisicing elit. Nesciunt voluptatem, tempora aperiam non porro ipsa incidunt. Cupiditate natus quas officiis. Totam distinctio culpa, harum voluptates dolor id laboriosam natus voluptas y Github!
                 </p>
             </section>
         </div>
@@ -52,7 +73,7 @@
 
     <!-- Footer Block -->
     <footer>
-        <p>Todos los derechos reservados. Gabriel Bergoeing Freelancer</p>
+        <p>Todos los derechos reservados. Gabriel Bergoeing</p>
     </footer>
 </body>
 </html>
