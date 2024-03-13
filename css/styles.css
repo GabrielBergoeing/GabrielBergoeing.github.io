@@ -27,12 +27,22 @@ h2 {
 h3 {
     font-size: 1.8rem;
 }
-h1,h2,h3{
+h1,h2,h3,table,th,td{
     text-align: center;
 }
-p{
-
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
 }
+section{
+    padding: 2rem;
+}
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto; /* top right bottom left */
@@ -80,20 +90,13 @@ p{
 
 
 /*__________Secciones__________*/
-@media (min-width: 768px) {
-    section{
-        padding: 2rem;
-    }
-    p{
-        text-align: justify;
-        text-justify: inter-word;
-    }   
+@media (min-width: 768px) {   
     .bio {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 3 Numbers, 3 coulmns*/
         /*grid: row, row / column, column;*/
     }
-    .secciones {
+    .secciones{
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 Numbers, 3 coulmns*/
         /*grid: row, row / column, column;*/
